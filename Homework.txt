@@ -1,0 +1,10 @@
+
+Links :
+1) https://gyansetu-java.gitbook.io/core-java/
+
+
+--29 june 2019
+1) Given a num print odd or even
+2) a= 6, b=3 , :a=3, b =6 : with or without third
+3) Given three num print max of three
+4) https://gyansetu-java.gitbook.io/core-java/java-class/problems
