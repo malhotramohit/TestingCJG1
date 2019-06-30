@@ -8,3 +8,12 @@ Links :
 2) a= 6, b=3 , :a=3, b =6 : with or without third
 3) Given three num print max of three
 4) https://gyansetu-java.gitbook.io/core-java/java-class/problems
+
+
+--- 30 june--
+1)https://gyansetu-java.gitbook.io/core-java/flow-control/for-loop  : while and do while
+2) 1) Find whether the number is prime or not?
+2) Find whether the number is pallindrome or not?
+3) https://gyansetu-java.gitbook.io/core-java/flow-control/problems
+4) https://gyansetu-java.gitbook.io/core-java/methods/problems
+5) Hands on gitbook :static , method overlaoding example
