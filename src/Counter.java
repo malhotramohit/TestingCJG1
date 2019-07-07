@@ -1,7 +1,7 @@
 
 public class Counter {
 
-	static int count = 0;// class variable
+	 int count = 0;// class variable
 
 	void increment() {
 		count++;

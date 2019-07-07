@@ -1,6 +1,16 @@
 
 public class MethodExmaple {
 
+	static void m1(RuntimeException um) {
+
+		System.out.println("Exception m1");
+	}
+
+	static void m1(NullPointerException num) {
+		System.out.println("NullPointerException m1");
+
+	}
+
 	static void printSomething() {
 		System.out.println("TEsting");
 	}
@@ -10,6 +20,9 @@ public class MethodExmaple {
 	}
 
 	public static void main(String[] args) {
+
+		m1(null);
+
 		printSomething();
 
 		MethodExmaple exmaple = new MethodExmaple();

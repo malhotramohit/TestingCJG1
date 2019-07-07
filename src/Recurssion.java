@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 // fact(5) = 5*4*3*2*1
 // fact(5) = 5*fact(4)
 // fact(4) = 4* fact(3)
@@ -11,8 +13,33 @@ public class Recurssion {
 
 	public static void main(String[] args) {
 		m1();
-		int res = fact(5);
+
+		int num = 0;
+		System.out.println("Enter the num");
+		Scanner input =  new Scanner(System.in);	
+		num = input.nextInt();
+		
+		
+		
+		int res = fact(num);
 		System.out.println(res);
+		
+		
+		 Scanner myObj = new Scanner(System.in);
+
+		    System.out.println("Enter name, age and salary");
+
+		    // String input
+		    String name = myObj.nextLine();
+
+		    // Numerical input
+		    int age = myObj.nextInt();
+		    double salary = myObj.nextDouble();
+
+		    // Output input by user
+		    System.out.println("Name: " + name); 
+		    System.out.println("Age: " + age); 
+		    System.out.println("Salary: " + salary); 
 	}
 
 	static void m1() {

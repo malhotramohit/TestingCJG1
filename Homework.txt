@@ -17,3 +17,10 @@ Links :
 3) https://gyansetu-java.gitbook.io/core-java/flow-control/problems
 4) https://gyansetu-java.gitbook.io/core-java/methods/problems
 5) Hands on gitbook :static , method overlaoding example
+
+-- 6 july ---
+1) WAP to revers an array
+	
+	
+-- 7 july ----
+1) https://www.ntu.edu.sg/home/ehchua/programming/java/J3f_OOPExercises.html
