@@ -24,3 +24,10 @@ Links :
 	
 -- 7 july ----
 1) https://www.ntu.edu.sg/home/ehchua/programming/java/J3f_OOPExercises.html
+
+
+--- 13 july---
+1) 1.1 -- 1.8
+2) 2.7, 2.8 , 2.3
+3) 4.1X
+
