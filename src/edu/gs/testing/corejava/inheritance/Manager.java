@@ -12,9 +12,10 @@ public class Manager extends Employeee {
 
 	}
 
-	public Manager(int teamSize, int id, String name, String emailId) {
+	public Manager(int id, String name, String emailId, int teamSize) {
 		super(id, name, emailId);
 		// super();
+		System.out.println("Inside man cons");
 		this.teamSize = teamSize;
 	}
 
@@ -29,12 +30,5 @@ public class Manager extends Employeee {
 	public void manageTeam() {
 
 	}
-
-	@Override
-	public String toString() {
-		return "Manager [id=" + id + ", teamSize=" + teamSize + ", name=" + name + ", emaildId=" + emaildId + "]";
-	}
-
-
 
 }

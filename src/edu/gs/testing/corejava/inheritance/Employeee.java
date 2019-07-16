@@ -3,15 +3,16 @@ package edu.gs.testing.corejava.inheritance;
 public class Employeee {
 
 	protected int id = 90;
-	protected String name;
-	protected String emaildId;
+	private String name;
+	private String emaildId;
 
 	// public Employeee() {
 	//
 	// }
 
 	public Employeee(int id, String name, String emaildId) {
-		super();
+		System.out.println("Inside emp cons");
+
 		this.id = id;
 		this.name = name;
 		this.emaildId = emaildId;
