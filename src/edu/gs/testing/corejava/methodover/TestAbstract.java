@@ -1,16 +1,13 @@
 package edu.gs.testing.corejava.methodover;
 
 abstract class Shape {
-
 	protected String color;
 	protected boolean filled;
 
 	public Shape() {
-		super();
 	}
 
 	public Shape(String color, boolean filled) {
-		super();
 		this.color = color;
 		this.filled = filled;
 	}
@@ -39,15 +36,64 @@ abstract class Shape {
 
 }
 
+class Rectangle extends Shape {
+	protected double width;
+	protected double length;
+
+	public Rectangle() {
+	}
+
+	public Rectangle(double width, double length) {
+		this.width = width;
+		this.length = length;
+	}
+
+	public Rectangle(double width, double length, String color, boolean filled) {
+		super(color, filled);
+		this.width = width;
+		this.length = length;
+	}
+
+	public double getWidth() {
+		return width;
+	}
+
+	public void setWidth(double width) {
+		this.width = width;
+	}
+
+	public double getLength() {
+		return length;
+	}
+
+	public void setLength(double length) {
+		this.length = length;
+	}
+
+	@Override
+	public double getArea() {
+		return length * width;
+	}
+
+	@Override
+	public double getPerimeter() {
+		return 2 * (width + length);
+	}
+
+	@Override
+	public String toString() {
+		return "Rectangle [width=" + width + ", length=" + length + ", color=" + color + ", filled=" + filled + "]";
+	}
+
+}
+
 class Circle extends Shape {
 	protected double radius;
 
 	public Circle() {
-		super();
 	}
 
 	public Circle(double radius) {
-		super();
 		this.radius = radius;
 	}
 
@@ -64,16 +110,14 @@ class Circle extends Shape {
 		this.radius = radius;
 	}
 
-	// @Override
+	@Override
 	public double getArea() {
-		// TODO Auto-generated method stub
 		return Math.PI * radius * radius;
 	}
 
 	@Override
 	public double getPerimeter() {
-		// TODO Auto-generated method stub
-		return 2 * Math.PI * radius;
+		return Math.PI * 2 * radius;
 	}
 
 	@Override
@@ -83,87 +127,32 @@ class Circle extends Shape {
 
 }
 
-class Rectangle extends Shape {
-	protected double length;
-	protected double width;
-
-	public Rectangle() {
-		super();
-	}
-
-	public Rectangle(double length, double width) {
-		super();
-		this.length = length;
-		this.width = width;
-	}
-
-	public Rectangle(double length, double width, String color, boolean filled) {
-		super(color, filled);
-		this.length = length;
-		this.width = width;
-	}
-
-	public double getLength() {
-		return length;
-	}
-
-	public void setLength(double length) {
-		this.length = length;
-	}
-
-	public double getWidth() {
-		return width;
-	}
-
-	public void setWidth(double width) {
-		this.width = width;
-	}
-
-	@Override
-	public double getArea() {
-
-		return length * width;
-	}
-
-	@Override
-	public double getPerimeter() {
-		// TODO Auto-generated method stub
-		return 2 * (length + width);
-	}
-
-	@Override
-	public String toString() {
-		return "Rectangle [length=" + length + ", width=" + width + ", color=" + color + ", filled=" + filled + "]";
-	}
-
-}
-
 public class TestAbstract {
 
 	public static void main(String[] args) {
 
-		// Shape shape = new Shape();
-		Circle circle = new Circle(10.88, "red", false);
-		System.out.println(circle);
-		System.err.println(circle.getArea());
+		Rectangle rectangle = new Rectangle(12, 13, "Red", false);
+		System.out.println(rectangle.getArea());
 
-		Shape s1 = new Circle(1055, "black", true); // upcasting
-		System.out.println(s1.getArea());
+		// par p = c();
+		Shape s1 = rectangle; // upcasting
+		System.out.println(s1.getPerimeter());
 
-		Circle c2 = (Circle) s1;// downcasting
+		Rectangle r1 = (Rectangle) s1;
+		System.out.println(r1.getLength());
 
-		Shape s2 = new Rectangle(12, 13, "red", false);
+		Shape s2 = new Circle(12, "red", false);
 
-		s2 = c2;
+		s2 = r1;
 
-		System.out.println(s2);
-		System.out.println(s2.getArea());
+		System.out.println(s2.getArea()); // rect area, runtime poly , dynamic method disp
 
-		if (s2 instanceof Rectangle) {
-			Rectangle rectangle = (Rectangle) s2;
-			rectangle.getLength();
+		if (s2 instanceof Circle) {
+			Circle c1 = (Circle) s2; // rect -> circle
+
+			System.out.println(c1.getRadius());
 		} else {
-			System.out.println("This is not possible");
+			System.out.println("not possible");
 		}
 
 	}
