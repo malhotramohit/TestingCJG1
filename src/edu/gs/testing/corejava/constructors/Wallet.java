@@ -38,6 +38,10 @@ public class Wallet {
 	// walletName = name;
 	// }
 
+	public Wallet() {
+		// TODO Auto-generated constructor stub
+	}
+
 	static int comparTo(Wallet wallet1, Wallet wallet2) {
 		if (wallet1.size > wallet2.size) {
 			return 1;

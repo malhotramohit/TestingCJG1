@@ -31,3 +31,12 @@ Links :
 2) 2.7, 2.8 , 2.3
 3) 4.1X
 
+
+
+--- 27 july 2019--
+1) https://gyansetu-java.gitbook.io/core-java/interfaces/problems
+
+-- 28 jily 2019----
+1) https://app.gitbook.com/@gyansetu-core-java-for-java/s/project/exception-handling/8-problems2) 
+2) create your own equals method for string
+3) reverse a string
